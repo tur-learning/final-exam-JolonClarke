@@ -1,7 +1,11 @@
-## Useful commands
+## How to Use This Program
 
-To run a python server:
+1. Navigate to the final-project file by typing "cd final-project" into the shell.
 
-    python -m http.server
+2. Run the program by typing "python main.py" into the shell.
 
-Once the model has been generated and the server is running, you can open the webpage and select viewer.html to visualize your model. After that, you can just refresh the page once a new model is generated.
+3. Answer the prompts in the shell and adjust your preferences.
+
+4. Click on the pop-up notification that appears in the corner of your screen.
+
+5. Click on "viewer.html" to visualize your model. After that, you can just refresh the page once a new model is generated.

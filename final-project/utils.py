@@ -1,6 +1,7 @@
 import os
 import zipfile
 from PIL import Image
+import json
 
 def zip_images(folder_path, zip_path):
     """
@@ -33,3 +34,12 @@ def convert_png_to_jpg(folder_path):
                 rgb_img = white_bg.convert("RGB")
                 rgb_img.save(output_path, "JPEG")
             os.remove(input_path)
+
+
+def update_config():
+    # Load existing config
+    if os.path.exists("config.json"):
+        with open("config.json", "r") as f:
+            config = json.load(f)
+    else:
+        config = {}

@@ -12,7 +12,7 @@ file_ids = [
     "1nIhExOE8asL0-7SSHx87BUij5TPxXfwj"
 ]
 
-def download_google_drive_file(file_id, dest_folder="./downloads"):
+def download_google_drive_file(file_id, dest_folder="downloads"):
     os.makedirs(dest_folder, exist_ok=True)
     url = f"https://drive.google.com/uc?export=download&id={file_id}"
     file_path = os.path.join(dest_folder, f"{file_id}.jpg")
